@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
 	cur->jump();
 	string ckey, cvalue;
 	while (cur->get(&ckey, &cvalue, true)) {
-		cout << ckey << cvalue << endl;
+		cout << ckey << ':' << cvalue << endl;
 	}
 	delete cur;
 
